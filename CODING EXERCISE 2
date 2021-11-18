@@ -1,0 +1,36 @@
+package Exercise;
+import java.util.*;
+class exercise2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc = new Scanner (System.in);
+
+double height;
+double weight;
+double bmi;
+
+System.out.print("Enter height in metre: ");
+height = sc.nextDouble();
+
+System.out.print("Enter weight in kilograms: ");
+weight = sc.nextDouble();
+
+bmi=weight / ( height * height) ;
+
+if (bmi < 18.5)
+System.out.printf("Underweight %.2f " , bmi);
+
+else if ((bmi >= 18.5) && (bmi <= 24.9))
+System.out.printf("Normal %.2f" , bmi);
+
+else if ((bmi >= 25.0) && (bmi<= 29.9))
+	System.out.printf("Overweight %.2f" , bmi);
+
+else 
+	System.out.printf("Obese %.2f" , bmi);
+
+
+	}
+
+}

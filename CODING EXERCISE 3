@@ -1,0 +1,53 @@
+package Exercise;
+import java.util.*;
+class exercise3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc = new Scanner (System.in);
+
+int subj1;
+int subj2;
+
+System.out.print("Enter marks for subject 1: ");
+subj1 = sc.nextInt();
+
+System.out.print("Enter marks for subject 2: ");
+subj2 = sc.nextInt();
+
+{
+if (subj1 >= subj2)
+	System.out.print("Marks for subject 1 is higher than subject 2 ");
+else
+	System.out.print("Marks for subject 2 is higher than subject 1 ");
+}
+System.out.println(" ");
+{
+	if ((subj1 >= 50) && (subj2 >= 50))
+	System.out.println("The candidate passes for subject 1 and subject 2");
+	
+	else if  ((subj1 <= 49) && (subj2 >= 50))
+		System.out.println("The candidate passes for subject 2 and fail subject 1");
+	else if  ((subj1 >= 50) && (subj2 <= 49))
+		System.out.println("The candidate passes for subject 1 and fail subject 2");
+	else  
+		System.out.println("The candidate failed for both subjects");
+}
+
+double avg = (subj1 + subj2) / 2;
+
+{
+	if(avg >= 80)
+		System.out.println("Your grade is A");
+	else if ((avg<= 79) && (avg>=60))
+		System.out.println("Your grade is B");
+	else if ((avg <= 59) && (avg >= 50))
+		System.out.println("Your grade is C");
+	else
+		System.out.println("You Fail");
+}
+
+}
+	}
+
+

@@ -1,0 +1,43 @@
+package Exercise;
+import java.util.*;
+class exercise7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc= new Scanner(System.in);
+	
+char grade;
+System.out.println("Enter grade :");
+
+grade= sc.next().charAt(0);
+
+switch (grade){
+
+case'A':
+	System.out.println("Marks is >= 90");
+	
+case'B' :
+	System.out.println("Marks is >=80 and less than 90");
+	
+case 'C':
+	System.out.println("Marks is  >=70 and less than 80");
+	
+case  'D':
+	System.out.println("Marks is  >=60 and less than 70");	
+	
+case 'E':
+	System.out.println("Marks is >=50 and less than 60");	
+	
+case 'F':
+	System.out.println("Marks is <=40");
+	
+	default:
+		System.out.println("Invalid Grade");
+		{
+}
+
+}
+	}
+}
+	
+

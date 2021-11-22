@@ -1,0 +1,31 @@
+package Exercise;
+import java.util.*;
+import java.util.Scanner;
+class exercise4 {
+
+	public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+
+int num;
+
+System.out.println("Enter number: ");
+num= sc.nextInt();
+
+if (num==10)
+{
+	System.out.println("The number is " + num);
+}
+else if(num==20)
+{
+	System.out.println("The number is " + num);
+	
+}
+else if(num==30)
+{
+	System.out.println("The number is " + num);
+}
+else 
+	System.out.println("The number is invalid");
+	}
+
+}

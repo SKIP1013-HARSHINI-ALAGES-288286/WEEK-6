@@ -1,0 +1,50 @@
+package Exercise;
+import java.util.*;
+class exercise6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc = new Scanner (System.in);
+
+char grade;
+
+
+System.out.println("Enter garde from (A, B, C, D, E or F): ");
+grade = sc.next().charAt(0);
+if (grade =='A')
+{
+	System.out.println("Marks is >= 90");
+}
+
+else  if(grade == 'B')
+{
+	System.out.println("Marks is >=80 and less than 90");	
+	}
+else if
+(grade == 'C')
+{
+	System.out.println("Marks is  >=70 and less than 80");	
+	}
+else if
+(grade == 'D')
+{
+	System.out.println("Marks is  >=60 and less than 70");	
+	}
+else if
+(grade == 'E')
+{
+	System.out.println("Marks is >=50 and less than 60");	
+	}
+else if
+(grade == 'F')
+{
+	System.out.println("Marks is <=40");	
+	}
+else
+	System.out.println("Invalid Grade");
+{
+	
+}
+
+	}
+}
